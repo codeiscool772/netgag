@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.tmp
+*.log
+
+# Compiled native artifacts: kept as source (native/*.c) + native/build.ps1
+# instead. Shipping unsigned binaries that do process injection/IAT patching
+# is exactly what GitHub's malware scanning and downstream antivirus flag -
+# building from source locally is more transparent and more trustworthy.
+netgag/*.dll
+netgag/*.exe
+native/*.exe
+native/*.dll
+native/*.obj
